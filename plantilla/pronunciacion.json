@@ -1,0 +1,12 @@
+{
+  "_nota": "Solo para la VOZ (el subtítulo muestra el texto original). Clave = palabra exacta (respeta mayúsculas), valor = cómo escribirla para que Daniela la lea bien. Probar con --pronunciacion <palabra> y anotar en la BITACORA.",
+  "bulldog": "buldog",
+  "Bulldog": "Buldog",
+  "rottweiler": "rotváiler",
+  "Rottweiler": "Rotváiler",
+  "pitbull": "pitbul",
+  "Pitbull": "Pitbul",
+  "Kia": "Kía",
+  "Shorts": "shorts",
+  "frenchie": "frenchi"
+}

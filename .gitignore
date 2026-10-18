@@ -1,0 +1,44 @@
+# Skills de HyperFrames: se reinstalan con skills-lock.json
+#   npx skills add heygen-com/hyperframes
+.agents/
+.claude/skills/
+.claude/settings.local.json
+
+# Dependencias
+node_modules/
+
+# Videos finales (pesados): se regeneran con
+#   node plantilla/make-video.mjs <slug> --render
+# Se versionan solo la descripción de YouTube y las miniaturas.
+*.mp4
+salida/subidos/*.mp4
+
+# Material real del celular (fotos/clips de Kia): pesado y privado, no va a git
+material/*/*.mp4
+material/*/*.mov
+
+# Carpetas de trabajo generadas por make-video / pose-lab / hyperframes
+videos/_*/
+videos/*/renders/
+videos/*/snapshots/
+videos/*/assets/
+videos/*/miniatura*/
+videos/*/16x9/
+videos/*/9x16/
+videos/*/.media/
+videos/*/.thumbnails/
+videos/*/.waveform-cache/
+videos/*/.hyperframes/
+videos/*/public/
+videos/*.log
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.log
+
+# Modelo de voz Piper (114 MB, ver plantilla/README.md → Voz)
+voces-piper/*.onnx
+plantilla/voces-piper/*.onnx

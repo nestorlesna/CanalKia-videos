@@ -1,0 +1,6 @@
+{
+  "_nota": "Defaults del canal. voz: Daniela es_AR con post-proceso de tono (pitch) y velocidad (speed); se pueden pisar por ficha con \"voice\": {\"pitch\", \"speed\"}. musica: archivo de plantilla/musica/. Elegidos por el usuario (ver BITACORA).",
+  "voz": { "voice": "es_AR-daniela-high", "pitch": 1.10, "speed": 1.05 },
+  "musica": "ukelele.wav",
+  "musicVolume": 0.15
+}

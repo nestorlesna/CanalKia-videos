@@ -1,0 +1,11 @@
+/* fonts: https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap */
+/* Identidad "kia" — calcada del logo y el banner del canal (colores sampleados de los PNG). Ver kia.frame.md */
+:root {
+  --bg: #FFCF4D; --cream: #FFE7A3; --floor: #F2B93B; --ocre: #F2B93B; --ocre-strong: #C98A1E; --paw: #B59139; --zzz: #957630;
+  --line: #2B1D14; --ink: #2B1D14; --muted: #6B5235;
+  --fur: #D9965B; --belly: #EDBE8C; --mask: #5A3A28;
+  --ball: #2E7DD1; --red: #E2574C; --pink: #E86B7A; --leaf: #5FB55B;
+  --card: #FFF6DC; --sub-bg: #FFF6DC; --sub-ink: #2B1D14;
+  --font-display: "Fredoka", sans-serif; --font-body: "Fredoka", sans-serif;
+  --radius: 36px; --shadow: 0 10px 0 rgba(43,29,20,0.18);
+}

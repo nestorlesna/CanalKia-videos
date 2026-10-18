@@ -1,0 +1,81 @@
+/* Layout del canal de Kia en los dos formatos. #root lleva la clase f16x9 (1920×1080) o f9x16 (1080×1920).
+   Colores y fuentes: plantilla/identidad/<activa>.css. Las medidas que dependen del formato las pone el builder
+   en variables (--floor-y, --cx, --cartel-top, --cartel-w, --sub-top…). */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { overflow: hidden; background: var(--bg); }
+#root { position: relative; overflow: hidden; background: var(--bg); font-family: var(--font-body); color: var(--ink); }
+.clip { position: absolute; }
+
+/* fondo: amarillo, círculos crema, piso ocre, huellas (como el banner) */
+#bg { inset: 0; background: var(--bg); overflow: hidden; }
+#bg .circ { position: absolute; border-radius: 50%; background: var(--cream); }
+#bg .floor { position: absolute; left: 0; right: 0; bottom: 0; top: var(--floor-y); background: var(--floor); }
+#bg .paw { position: absolute; opacity: 0.85; }
+#bg .paw svg { width: 100%; height: 100%; }
+
+/* barra superior: logo redondo + KIA */
+#topbar .inner { display: flex; align-items: center; gap: 16px; font-family: var(--font-display); font-weight: 700; color: var(--ink); letter-spacing: 3px; }
+#topbar .inner svg { width: 74px; height: 74px; }
+.f16x9 #topbar { left: 46px; top: 30px; font-size: 44px; }
+.f9x16 #topbar { left: 60px; top: 150px; font-size: 44px; }
+
+/* barra de progreso (arriba de todo: abajo y a la derecha están los botones de Shorts) */
+#progress { left: 0; top: 0; width: 100%; height: 12px; background: rgba(43,29,20,0.10); }
+#progress-fill { width: 100%; height: 100%; background: var(--ocre-strong); transform-origin: 0 50%; }
+
+/* escenario (SVG del tamaño del cuadro) */
+.visual { left: 0; top: 0; }
+.visual svg { display: block; overflow: visible; }
+
+/* textos de escena */
+.scene-text { left: 0; top: 0; width: 100%; }
+.scene-text .inner { position: relative; width: 100%; }
+.cartel-wrap { position: absolute; left: calc(var(--cx) - var(--cartel-w) / 2); top: var(--cartel-top); width: var(--cartel-w); display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.cartel { display: inline-flex; max-width: 100%; align-items: center; gap: 22px; white-space: nowrap; background: var(--card); border: 7px solid var(--line); border-radius: var(--radius);
+  padding: 14px 46px 18px; box-shadow: var(--shadow); font-family: var(--font-display); font-weight: 700; color: var(--ink); line-height: 1.05; }
+.f16x9 .cartel { font-size: 92px; }
+.f9x16 .cartel { font-size: 84px; }
+.cartel.chico { font-size: 60px; padding: 10px 34px 14px; }
+.cartel svg { width: 1.0em; height: 1.0em; flex: none; }
+.cartel .num { display: inline-flex; align-items: center; justify-content: center; width: 1.25em; height: 1.25em; border-radius: 50%; background: var(--ocre); border: 6px solid var(--line); font-size: 0.8em; flex: none; }
+.cartel.dormir { background: var(--line); color: var(--cream); }
+.cartel.dormir .num { background: var(--cream); color: var(--line); }
+
+/* portada (hook): KIA gigante como el banner */
+.titulo { position: absolute; display: flex; flex-direction: column; color: var(--ink); }
+.titulo .t { font-family: var(--font-display); font-weight: 700; line-height: 0.9; letter-spacing: 2px; }
+.titulo .b { font-family: var(--font-display); font-weight: 700; line-height: 1.1; margin-top: 18px; white-space: nowrap; }
+.titulo .l { font-family: var(--font-body); font-weight: 500; line-height: 1.2; margin-top: 12px; white-space: nowrap; }
+.f16x9 .titulo { left: 900px; top: 280px; width: 960px; align-items: flex-start; }
+.f16x9 .titulo .t { font-size: 250px; }
+.f16x9 .titulo .b { font-size: 76px; }
+.f16x9 .titulo .l { font-size: 44px; }
+.f9x16 .titulo { left: 60px; top: 300px; width: 880px; align-items: center; text-align: center; }
+.f9x16 .titulo .t { font-size: 260px; }
+.f9x16 .titulo .b { font-size: 70px; }
+.f9x16 .titulo .l { font-size: 40px; }
+.titulo.mini .t { font-size: 200px; }
+
+/* ranking de hobbies */
+.ranking { background: var(--card); border: 7px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 40px 30px; display: flex; flex-direction: column; gap: 14px; }
+.ranking .hd { align-self: center; background: var(--line); color: var(--cream); font-family: var(--font-display); font-weight: 700; border-radius: 999px; padding: 8px 30px; letter-spacing: 3px; white-space: nowrap; }
+.ranking .it { display: flex; align-items: center; gap: 22px; font-family: var(--font-display); font-weight: 700; white-space: nowrap; }
+.ranking .it .num { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--ocre); border: 5px solid var(--line); flex: none; }
+.ranking .it .ph { flex: 1; height: 10px; border-radius: 5px; background: rgba(43,29,20,0.18); }
+.f16x9 .ranking { width: 860px; }
+.f16x9 .ranking .hd { font-size: 40px; }
+.f16x9 .ranking .it { font-size: 54px; }
+.f16x9 .ranking .it .num { width: 70px; height: 70px; font-size: 40px; }
+.f9x16 .ranking { width: 860px; }
+.f9x16 .ranking .hd { font-size: 38px; }
+.f9x16 .ranking .it { font-size: 56px; }
+.f9x16 .ranking .it .num { width: 76px; height: 76px; font-size: 42px; }
+
+/* subtítulo: caja crema con contorno marrón, máx. 3 líneas */
+.subtitle .inner { background: var(--sub-bg); border: 5px solid var(--line); border-radius: 28px; padding: 14px 30px 16px; box-shadow: var(--shadow); text-align: center; }
+.subtitle p { color: var(--sub-ink); font-family: var(--font-display); font-weight: 600; line-height: 1.22; }
+.f16x9 .subtitle { left: 170px; width: 1580px; bottom: 30px; }
+.f16x9 .subtitle p { font-size: 44px; }
+.f9x16 .subtitle { left: 60px; width: 880px; top: var(--sub-top); }
+.f9x16 .subtitle p { font-size: 46px; }
+.a-in { opacity: 0; }
