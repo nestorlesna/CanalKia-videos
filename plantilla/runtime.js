@@ -33,7 +33,9 @@
     if (a.fx !== "tween" && a.from) Object.assign(from, a.from);
     if (a.fx !== "tween" && a.to) Object.assign(to, a.to);
     const extra = {};
-    if (a.origin) { if (a.svg) extra.svgOrigin = a.origin; else extra.transformOrigin = a.origin; }
+    // smoothOrigin: false — con el default de GSAP, el cambio de origen en un <g> SVG (medido mientras la escena está
+    // oculta) se "compensa" corriendo el objeto: quedaba desplazado ~0,6 × medio tamaño hacia arriba a la izquierda.
+    if (a.origin) { if (a.svg) extra.svgOrigin = a.origin; else { extra.transformOrigin = a.origin; from.transformOrigin = a.origin; } extra.smoothOrigin = false; from.smoothOrigin = false; }
     if (a.repeat) { extra.repeat = a.repeat; extra.yoyo = !!a.yoyo; }
     if (a.ease && a.fx !== "tween") extra.ease = a.ease;
     tl.fromTo(a.sel, Object.assign(from, a.svg && a.origin ? { svgOrigin: a.origin } : {}), Object.assign(to, extra, IR), a.t);

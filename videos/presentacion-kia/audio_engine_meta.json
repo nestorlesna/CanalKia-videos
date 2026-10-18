@@ -1,0 +1,125 @@
+{
+  "tts_provider": "piper",
+  "voice_id": "es_AR-daniela-high",
+  "pitch": 1.14,
+  "speed": 1.12,
+  "bgm": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/01.wav",
+      "duration_s": 0.988,
+      "words": []
+    },
+    {
+      "id": "02",
+      "path": "assets/voice/02.wav",
+      "duration_s": 3.685,
+      "words": []
+    },
+    {
+      "id": "03",
+      "path": "assets/voice/03.wav",
+      "duration_s": 4.067,
+      "words": []
+    },
+    {
+      "id": "04",
+      "path": "assets/voice/04.wav",
+      "duration_s": 1.897,
+      "words": []
+    },
+    {
+      "id": "05",
+      "path": "assets/voice/05.wav",
+      "duration_s": 0.519,
+      "words": []
+    },
+    {
+      "id": "06",
+      "path": "assets/voice/06.wav",
+      "duration_s": 2.611,
+      "words": []
+    },
+    {
+      "id": "07",
+      "path": "assets/voice/07.wav",
+      "duration_s": 2.623,
+      "words": []
+    },
+    {
+      "id": "08",
+      "path": "assets/voice/08.wav",
+      "duration_s": 0.535,
+      "words": []
+    },
+    {
+      "id": "09",
+      "path": "assets/voice/09.wav",
+      "duration_s": 4.712,
+      "words": []
+    },
+    {
+      "id": "10",
+      "path": "assets/voice/10.wav",
+      "duration_s": 4.125,
+      "words": []
+    },
+    {
+      "id": "11",
+      "path": "assets/voice/11.wav",
+      "duration_s": 0.541,
+      "words": []
+    },
+    {
+      "id": "12",
+      "path": "assets/voice/12.wav",
+      "duration_s": 2.187,
+      "words": []
+    },
+    {
+      "id": "13",
+      "path": "assets/voice/13.wav",
+      "duration_s": 0.483,
+      "words": []
+    },
+    {
+      "id": "14",
+      "path": "assets/voice/14.wav",
+      "duration_s": 2.827,
+      "words": []
+    },
+    {
+      "id": "15",
+      "path": "assets/voice/15.wav",
+      "duration_s": 1.736,
+      "words": []
+    },
+    {
+      "id": "16",
+      "path": "assets/voice/16.wav",
+      "duration_s": 2.734,
+      "words": []
+    },
+    {
+      "id": "17",
+      "path": "assets/voice/17.wav",
+      "duration_s": 4.64,
+      "words": []
+    },
+    {
+      "id": "18",
+      "path": "assets/voice/18.wav",
+      "duration_s": 2.611,
+      "words": []
+    },
+    {
+      "id": "19",
+      "path": "assets/voice/19.wav",
+      "duration_s": 1.763,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 45.284
+}

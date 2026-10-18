@@ -1,0 +1,85 @@
+{
+  "provider": "piper",
+  "voice": "es_AR-daniela-high",
+  "pitch": 1.14,
+  "speed": 1.12,
+  "lines": [
+    {
+      "id": "01",
+      "text": "¡Hola! Soy Kía."
+    },
+    {
+      "id": "02",
+      "text": "Mi hermano dice que soy una perra buldog francés, pero yo no lo entiendo."
+    },
+    {
+      "id": "03",
+      "text": "Soy una humana de cuatro patitas, con una panza redondita que vuelve loco a todo el mundo."
+    },
+    {
+      "id": "04",
+      "text": "Mis hobbies, en orden de importancia:"
+    },
+    {
+      "id": "05",
+      "text": "Dormir."
+    },
+    {
+      "id": "06",
+      "text": "Acompañar a mi hermano al colegio todas las mañanas,"
+    },
+    {
+      "id": "07",
+      "text": "y después sacar a pasear a su papá, que necesita caminar."
+    },
+    {
+      "id": "08",
+      "text": "Dormir."
+    },
+    {
+      "id": "09",
+      "text": "Salir disparada como una flecha cuando escucho a alguien en el pasillo, ladrando como si me lo fuera a comer."
+    },
+    {
+      "id": "10",
+      "text": "Entre nosotros: no creo ser buldog francés. Para mí soy rotváiler. O pitbul."
+    },
+    {
+      "id": "11",
+      "text": "Dormir."
+    },
+    {
+      "id": "12",
+      "text": "Comerme todo lo que a mamá se le cae cuando cocina."
+    },
+    {
+      "id": "13",
+      "text": "Dormir."
+    },
+    {
+      "id": "14",
+      "text": "Perseguir a cualquier humano de la casa hasta que me tire la pelota."
+    },
+    {
+      "id": "15",
+      "text": "Ah… creo que me olvidé de poner dormir.",
+      "speed": 0.88
+    },
+    {
+      "id": "16",
+      "text": "Acá van a ver videos míos de verdad y otros animados."
+    },
+    {
+      "id": "17",
+      "text": "Mi hermano es el que sabe de tecnología; yo solo lo miro cuando juega y no entiendo nada de lo que dice."
+    },
+    {
+      "id": "18",
+      "text": "Si tarda en subir videos, ya saben a quién reclamarle."
+    },
+    {
+      "id": "19",
+      "text": "¡Suscribite, que ladrar es gratis!"
+    }
+  ]
+}

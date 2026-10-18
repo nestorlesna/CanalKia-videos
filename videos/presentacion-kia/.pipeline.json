@@ -1,0 +1,21 @@
+{
+  "voz": true,
+  "16x9": {
+    "composicion": true,
+    "duracion": 70.012,
+    "miniatura": true,
+    "check": true,
+    "renderizado": "2026-10-18",
+    "renderHash": "09b76384bf33:kia",
+    "archivo": "presentacion-kia.16x9.mp4"
+  },
+  "9x16": {
+    "composicion": true,
+    "duracion": 50.227,
+    "miniatura": true,
+    "check": true,
+    "renderizado": "2026-10-18",
+    "renderHash": "09b76384bf33:kia",
+    "archivo": "presentacion-kia.short.mp4"
+  }
+}

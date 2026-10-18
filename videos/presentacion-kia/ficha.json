@@ -1,0 +1,1264 @@
+{
+  "slug": "presentacion-kia",
+  "titulo": "¡Hola! Soy Kia",
+  "tipo": "animado",
+  "formatos": [
+    "16x9",
+    "9x16"
+  ],
+  "musica": "ukelele.wav",
+  "comida": true,
+  "revisado": false,
+  "notas": "Presentación del canal. Texto casi literal de Presentacion/Presentacion.txt. Chiste central: los 4 'Dormir' cortos con posturas cada vez más ridículas.",
+  "frames": [
+    {
+      "id": "01",
+      "kind": "hook",
+      "min": 3.2,
+      "short": true,
+      "titulo": {
+        "texto": "KIA",
+        "bajada": "La humana de cuatro patitas",
+        "linea": "Videos reales y animados · Dormir es mi deporte"
+      },
+      "kia": {
+        "pose": "SENTADA",
+        "entra": "salto",
+        "moves": [
+          {
+            "to": "SALUDO",
+            "at": 0.95,
+            "dur": 0.3
+          },
+          {
+            "seq": [
+              [
+                "SALUDO_B",
+                0.28
+              ],
+              [
+                "SALUDO",
+                0.28
+              ]
+            ],
+            "at": 1.25,
+            "until": "end"
+          }
+        ],
+        "16x9": {
+          "x": -330,
+          "sc": 1.15
+        },
+        "9x16": {
+          "x": 0,
+          "sc": 1
+        }
+      },
+      "sfx": [
+        {
+          "id": "boing",
+          "at": 0.75
+        }
+      ],
+      "vo": "¡Hola! Soy Kia."
+    },
+    {
+      "id": "02",
+      "kind": "escena",
+      "short": true,
+      "cartel": {
+        "texto": "¿BULLDOG FRANCÉS?",
+        "at": 0.5
+      },
+      "kia": {
+        "pose": "SENTADA",
+        "moves": [
+          {
+            "to": "CONFUNDIDA",
+            "at": 2.6,
+            "dur": 0.35
+          },
+          {
+            "set": {
+              "el": 46,
+              "ht": 26
+            },
+            "at": 3.3,
+            "dur": 0.3
+          }
+        ]
+      },
+      "efectos": [
+        {
+          "tipo": "pregunta",
+          "cue": "no lo entiendo"
+        }
+      ],
+      "vo": "Mi hermano dice que soy una perra bulldog francés, pero yo no lo entiendo."
+    },
+    {
+      "id": "03",
+      "kind": "escena",
+      "short": true,
+      "cartel": {
+        "texto": "HUMANA DE 4 PATITAS",
+        "chico": true,
+        "at": 0.4
+      },
+      "kia": {
+        "pose": "CONTENTA",
+        "moves": [
+          {
+            "cut": "PANZA",
+            "at": 2.1
+          },
+          {
+            "seq": [
+              [
+                "PANZA_B",
+                0.3
+              ],
+              [
+                "PANZA",
+                0.3
+              ]
+            ],
+            "at": 2.4,
+            "until": "end"
+          }
+        ],
+        "9x16": {
+          "sc": 0.9
+        }
+      },
+      "props": [
+        {
+          "tipo": "aro",
+          "pos": [
+            -40,
+            -95
+          ],
+          "size": 330,
+          "cue": "redondita",
+          "loop": "late",
+          "9x16": {
+            "size": 290,
+            "pos": [
+              -40,
+              -90
+            ]
+          }
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "corazones",
+          "cue": "loco",
+          "pos": [
+            -10,
+            -330
+          ],
+          "9x16": {
+            "pos": [
+              -10,
+              -300
+            ]
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "id": "pop",
+          "cue": "redondita"
+        }
+      ],
+      "vo": "Soy una humana de cuatro patitas, con una panza redondita que vuelve loco a todo el mundo."
+    },
+    {
+      "id": "04",
+      "kind": "ranking",
+      "short": true,
+      "items": [],
+      "vacios": 3,
+      "min": 3.2,
+      "kia": {
+        "pose": "CONTENTA",
+        "16x9": {
+          "x": 560,
+          "sc": 0.95
+        },
+        "9x16": {
+          "x": 0,
+          "sc": 0.8
+        }
+      },
+      "vo": "Mis hobbies, en orden de importancia:"
+    },
+    {
+      "id": "05",
+      "kind": "dormir",
+      "numero": 1,
+      "min": 1.9,
+      "short": true,
+      "kia": {
+        "pose": "DORMIDA"
+      },
+      "vo": "Dormir."
+    },
+    {
+      "id": "06",
+      "kind": "escena",
+      "short": false,
+      "piso": 260,
+      "cartel": {
+        "texto": "AL COLEGIO",
+        "numero": 2,
+        "icono": "mochila",
+        "chico": true,
+        "at": 0.3
+      },
+      "kia": {
+        "pose": "CAMINA_A",
+        "x": 80,
+        "moves": [
+          {
+            "loop": [
+              "CAMINA_B",
+              "CAMINA_A"
+            ],
+            "step": 0.28,
+            "at": 0,
+            "until": "end"
+          }
+        ]
+      },
+      "props": [
+        {
+          "tipo": "humano",
+          "quien": "hermano",
+          "pos": [
+            -170,
+            0
+          ],
+          "camina": 1.8
+        },
+        {
+          "tipo": "correa",
+          "a": "hermano"
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "notas",
+          "at": 0.8
+        }
+      ],
+      "vo": "Acompañar a mi hermano al colegio todas las mañanas,"
+    },
+    {
+      "id": "07",
+      "kind": "escena",
+      "short": false,
+      "piso": 380,
+      "cartel": {
+        "texto": "PASEAR A PAPÁ",
+        "numero": 2,
+        "icono": "huella",
+        "chico": true,
+        "at": 0.3
+      },
+      "kia": {
+        "pose": "CAMINA_A",
+        "x": 260,
+        "set": {
+          "bt": -6,
+          "tw": 30
+        },
+        "moves": [
+          {
+            "loop": [
+              "CAMINA_B",
+              "CAMINA_A"
+            ],
+            "step": 0.2,
+            "at": 0,
+            "until": "end",
+            "set": {
+              "bt": -6
+            }
+          }
+        ]
+      },
+      "props": [
+        {
+          "tipo": "humano",
+          "quien": "papa",
+          "pos": [
+            -260,
+            0
+          ],
+          "camina": 1.1,
+          "ma": 1
+        },
+        {
+          "tipo": "correa",
+          "a": "papa",
+          "sag": 10
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "velocidad",
+          "at": 0.4,
+          "size": 150
+        }
+      ],
+      "vo": "y después sacar a pasear a su papá, que necesita caminar."
+    },
+    {
+      "id": "08",
+      "kind": "dormir",
+      "numero": 3,
+      "min": 1.9,
+      "short": true,
+      "9x16": {
+        "numero": 2
+      },
+      "kia": {
+        "pose": "DORMIDA_PANZA_ARRIBA"
+      },
+      "vo": "Dormir."
+    },
+    {
+      "id": "09",
+      "kind": "escena",
+      "short": true,
+      "min": 6,
+      "cartel": {
+        "texto": "¡ALGUIEN EN EL PASILLO!",
+        "numero": 4,
+        "chico": true,
+        "at": 0.3,
+        "9x16": {
+          "numero": 3
+        }
+      },
+      "kia": {
+        "pose": "PARADA",
+        "x": -520,
+        "set": {
+          "el": -8
+        },
+        "moves": [
+          {
+            "cut": "CORRE_A",
+            "at": 0.5
+          },
+          {
+            "loop": [
+              "CORRE_B",
+              "CORRE_A"
+            ],
+            "step": 0.17,
+            "at": 0.62,
+            "until": 3.2
+          },
+          {
+            "set": {
+              "x": 60
+            },
+            "at": 0.62,
+            "dur": 2.6,
+            "ease": "power1.inOut"
+          },
+          {
+            "to": "LADRA",
+            "at": 4.7,
+            "dur": 0.15
+          },
+          {
+            "seq": [
+              [
+                "LADRA_B",
+                0.22
+              ],
+              [
+                "LADRA",
+                0.22
+              ]
+            ],
+            "at": 4.9,
+            "until": "end"
+          }
+        ],
+        "9x16": {
+          "x": -330,
+          "sc": 0.85,
+          "moves": [
+            {
+              "cut": "CORRE_A",
+              "at": 0.5
+            },
+            {
+              "loop": [
+                "CORRE_B",
+                "CORRE_A"
+              ],
+              "step": 0.17,
+              "at": 0.62,
+              "until": 3.2
+            },
+            {
+              "set": {
+                "x": -70
+              },
+              "at": 0.62,
+              "dur": 2.6,
+              "ease": "power1.inOut"
+            },
+            {
+              "to": "LADRA",
+              "at": 4.7,
+              "dur": 0.15
+            },
+            {
+              "seq": [
+                [
+                  "LADRA_B",
+                  0.22
+                ],
+                [
+                  "LADRA",
+                  0.22
+                ]
+              ],
+              "at": 4.9,
+              "until": "end"
+            }
+          ]
+        }
+      },
+      "props": [
+        {
+          "tipo": "puerta",
+          "pos": [
+            420,
+            0
+          ],
+          "9x16": {
+            "pos": [
+              230,
+              0
+            ],
+            "size": 200
+          }
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "exclamacion",
+          "at": 0.15,
+          "out": 0.6
+        },
+        {
+          "tipo": "velocidad",
+          "at": 0.7,
+          "out": 3.2
+        }
+      ],
+      "globos": [
+        {
+          "texto": "¡GUAU!",
+          "at": 3.4,
+          "sacude": true,
+          "16x9": {
+            "pos": [
+              -660,
+              -430
+            ]
+          },
+          "9x16": {
+            "tam": 60,
+            "pos": [
+              -220,
+              -470
+            ]
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "id": "whoosh",
+          "at": 0.6
+        },
+        {
+          "id": "ladrido-doble",
+          "at": 3.4
+        }
+      ],
+      "vo": "Salir disparada como una flecha cuando escucho a alguien en el pasillo, ladrando como si me lo fuera a comer."
+    },
+    {
+      "id": "10",
+      "kind": "escena",
+      "short": true,
+      "cartel": {
+        "texto": "ROTTWEILER (?)",
+        "cue": "rottweiler"
+      },
+      "kia": {
+        "pose": "SENTADA",
+        "x": 120,
+        "set": {
+          "lx": -1,
+          "ly": 0.3,
+          "ht": -10
+        },
+        "moves": [
+          {
+            "to": "RUDA",
+            "at": 2.4,
+            "dur": 0.4
+          },
+          {
+            "set": {
+              "ch": 1.2,
+              "sq": 1.1
+            },
+            "at": 3.3,
+            "dur": 0.4
+          }
+        ],
+        "9x16": {
+          "x": 40
+        }
+      },
+      "props": [
+        {
+          "tipo": "sombra",
+          "pos": [
+            -260,
+            -10
+          ],
+          "size": 760,
+          "cue": "rottweiler",
+          "entra": "fade",
+          "9x16": {
+            "pos": [
+              -150,
+              -10
+            ],
+            "size": 560
+          }
+        }
+      ],
+      "vo": "Entre nosotros: no creo ser bulldog francés. Para mí soy rottweiler. O pitbull."
+    },
+    {
+      "id": "11",
+      "kind": "dormir",
+      "numero": 5,
+      "min": 1.9,
+      "short": false,
+      "kia": {
+        "pose": "DORMIDA_SPLOOT"
+      },
+      "vo": "Dormir."
+    },
+    {
+      "id": "12",
+      "kind": "escena",
+      "short": true,
+      "min": 3.6,
+      "cartel": {
+        "texto": "LO QUE SE LE CAE A MAMÁ",
+        "numero": 6,
+        "chico": true,
+        "at": 0.3,
+        "9x16": {
+          "numero": 4
+        }
+      },
+      "kia": {
+        "pose": "SENTADA",
+        "x": 170,
+        "set": {
+          "lx": -0.6,
+          "ly": -1
+        },
+        "moves": [
+          {
+            "to": "COME",
+            "at": 0.9,
+            "dur": 0.25
+          },
+          {
+            "to": "COME_B",
+            "at": 1.45,
+            "dur": 0.18,
+            "ease": "power2.out"
+          },
+          {
+            "to": "MASTICA",
+            "at": 1.75,
+            "dur": 0.2
+          },
+          {
+            "seq": [
+              [
+                "CONTENTA",
+                0.22
+              ],
+              [
+                "MASTICA",
+                0.22
+              ]
+            ],
+            "at": 2,
+            "until": "end"
+          }
+        ],
+        "9x16": {
+          "x": 110,
+          "sc": 0.9
+        }
+      },
+      "props": [
+        {
+          "tipo": "mesada",
+          "pos": [
+            -380,
+            0
+          ],
+          "9x16": {
+            "pos": [
+              -210,
+              0
+            ],
+            "size": 400
+          }
+        },
+        {
+          "tipo": "humano",
+          "quien": "mama",
+          "pos": [
+            -300,
+            0
+          ],
+          "9x16": {
+            "pos": [
+              -170,
+              0
+            ]
+          }
+        },
+        {
+          "tipo": "zanahoria",
+          "pos": [
+            170,
+            -300
+          ],
+          "size": 110,
+          "at": 1,
+          "entra": "cae",
+          "dur": 0.55,
+          "alto": 700,
+          "out": 1.6,
+          "9x16": {
+            "pos": [
+              110,
+              -270
+            ]
+          }
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "estrellas",
+          "at": 1.6
+        }
+      ],
+      "sfx": [
+        {
+          "id": "mordisco",
+          "at": 1.55
+        }
+      ],
+      "vo": "Comerme todo lo que a mamá se le cae cuando cocina."
+    },
+    {
+      "id": "13",
+      "kind": "dormir",
+      "numero": 7,
+      "min": 2,
+      "short": false,
+      "kia": {
+        "pose": "DORMIDA_PLOP"
+      },
+      "vo": "Dormir."
+    },
+    {
+      "id": "14",
+      "kind": "escena",
+      "short": true,
+      "min": 4.2,
+      "cartel": {
+        "texto": "¡TIRAME LA PELOTA!",
+        "numero": 8,
+        "icono": "pelota",
+        "chico": true,
+        "at": 0.3,
+        "9x16": {
+          "numero": 5
+        }
+      },
+      "kia": {
+        "pose": "CORRE_A",
+        "x": -560,
+        "moves": [
+          {
+            "loop": [
+              "CORRE_B",
+              "CORRE_A"
+            ],
+            "step": 0.18,
+            "at": 0,
+            "until": 2.2
+          },
+          {
+            "set": {
+              "x": -60
+            },
+            "at": 0,
+            "dur": 2.2,
+            "ease": "power1.out"
+          },
+          {
+            "to": "PELOTA",
+            "at": 2.3,
+            "dur": 0.2
+          },
+          {
+            "seq": [
+              [
+                {
+                  "base": "PELOTA",
+                  "tw": -20,
+                  "jy": -14
+                },
+                0.22
+              ],
+              [
+                "PELOTA",
+                0.22
+              ]
+            ],
+            "at": 2.5,
+            "until": "end"
+          }
+        ],
+        "9x16": {
+          "x": -380,
+          "sc": 0.85,
+          "moves": [
+            {
+              "loop": [
+                "CORRE_B",
+                "CORRE_A"
+              ],
+              "step": 0.18,
+              "at": 0,
+              "until": 2.2
+            },
+            {
+              "set": {
+                "x": -150
+              },
+              "at": 0,
+              "dur": 2.2,
+              "ease": "power1.out"
+            },
+            {
+              "to": "PELOTA",
+              "at": 2.3,
+              "dur": 0.2
+            },
+            {
+              "seq": [
+                [
+                  {
+                    "base": "PELOTA",
+                    "tw": -20,
+                    "jy": -14
+                  },
+                  0.22
+                ],
+                [
+                  "PELOTA",
+                  0.22
+                ]
+              ],
+              "at": 2.5,
+              "until": "end"
+            }
+          ]
+        }
+      },
+      "props": [
+        {
+          "tipo": "humano",
+          "quien": "papa",
+          "pos": [
+            200,
+            0
+          ],
+          "camina": 1.6,
+          "mov": [
+            {
+              "at": 0,
+              "pos": [
+                560,
+                0
+              ],
+              "dur": 2.2,
+              "ease": "power1.out"
+            }
+          ],
+          "9x16": {
+            "pos": [
+              60,
+              0
+            ],
+            "mov": [
+              {
+                "at": 0,
+                "pos": [
+                  330,
+                  0
+                ],
+                "dur": 2.2,
+                "ease": "power1.out"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "pelota",
+          "pos": [
+            230,
+            -45
+          ],
+          "at": 2.1,
+          "entra": "cae",
+          "loop": "rebota",
+          "alto": 120,
+          "9x16": {
+            "pos": [
+              110,
+              -45
+            ]
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "id": "boing",
+          "at": 2.6
+        }
+      ],
+      "vo": "Perseguir a cualquier humano de la casa hasta que me tire la pelota."
+    },
+    {
+      "id": "15",
+      "kind": "escena",
+      "short": true,
+      "min": 4.6,
+      "voSpeed": 0.88,
+      "cartel": {
+        "texto": "¿Y DORMIR?",
+        "numero": 9,
+        "icono": "huella",
+        "chico": true,
+        "at": 0.3,
+        "out": 2.6,
+        "9x16": {
+          "numero": 6
+        }
+      },
+      "kia": {
+        "pose": "MIRA",
+        "moves": [
+          {
+            "to": "CONFUNDIDA",
+            "at": 0.7,
+            "dur": 0.35
+          },
+          {
+            "to": "DORMIDA_SENTADA",
+            "at": 2,
+            "dur": 0.9,
+            "ease": "power2.inOut"
+          }
+        ]
+      },
+      "efectos": [
+        {
+          "tipo": "pregunta",
+          "at": 0.8,
+          "out": 1.9
+        },
+        {
+          "tipo": "zzz",
+          "at": 2.8
+        }
+      ],
+      "sfx": [
+        {
+          "id": "bostezo",
+          "at": 2
+        },
+        {
+          "id": "ronquido",
+          "at": 3.2
+        }
+      ],
+      "vo": "Ah… creo que me olvidé de poner dormir."
+    },
+    {
+      "id": "16",
+      "kind": "escena",
+      "short": false,
+      "cartel": {
+        "texto": "VIDEOS REALES Y ANIMADOS",
+        "chico": true,
+        "at": 0.3
+      },
+      "kia": {
+        "pose": "CONTENTA",
+        "x": 260,
+        "fx": -1,
+        "moves": [
+          {
+            "to": "SALUDO",
+            "at": 1.2,
+            "dur": 0.3
+          },
+          {
+            "seq": [
+              [
+                "SALUDO_B",
+                0.28
+              ],
+              [
+                "SALUDO",
+                0.28
+              ]
+            ],
+            "at": 1.5,
+            "count": 2
+          }
+        ]
+      },
+      "props": [
+        {
+          "tipo": "marco",
+          "pos": [
+            -300,
+            -260
+          ],
+          "size": 330,
+          "at": 0.5,
+          "loop": "flota"
+        },
+        {
+          "tipo": "camara",
+          "pos": [
+            -520,
+            -110
+          ],
+          "size": 150,
+          "at": 0.9,
+          "rot": -10
+        }
+      ],
+      "vo": "Acá van a ver videos míos de verdad y otros animados."
+    },
+    {
+      "id": "17",
+      "kind": "escena",
+      "short": false,
+      "kia": {
+        "pose": "MIRA",
+        "x": 300,
+        "fx": -1,
+        "moves": [
+          {
+            "seq": [
+              [
+                "MIRA_B",
+                0.9
+              ],
+              [
+                "MIRA",
+                0.9
+              ]
+            ],
+            "at": 1.5,
+            "until": "end"
+          }
+        ]
+      },
+      "props": [
+        {
+          "tipo": "pantalla",
+          "pos": [
+            -260,
+            0
+          ],
+          "size": 460
+        },
+        {
+          "tipo": "joystick",
+          "pos": [
+            -20,
+            -40
+          ],
+          "size": 150,
+          "at": 0.8,
+          "loop": "tiembla"
+        }
+      ],
+      "efectos": [
+        {
+          "tipo": "pregunta",
+          "cue": "no entiendo",
+          "dx": 30,
+          "dy": -10
+        },
+        {
+          "tipo": "pregunta",
+          "cue": "dice",
+          "dx": -150,
+          "dy": -60,
+          "size": 70
+        }
+      ],
+      "vo": "Mi hermano es el que sabe de tecnología; yo solo lo miro cuando juega y no entiendo nada de lo que dice."
+    },
+    {
+      "id": "18",
+      "kind": "escena",
+      "short": true,
+      "cartel": {
+        "texto": "RECLAMOS: MI HERMANO",
+        "chico": true,
+        "cue": "reclamarle"
+      },
+      "kia": {
+        "pose": "SENTADA",
+        "x": 180,
+        "moves": [
+          {
+            "to": "SEÑALA",
+            "at": 1.2,
+            "dur": 0.3
+          },
+          {
+            "seq": [
+              [
+                {
+                  "base": "SEÑALA",
+                  "hx": -24
+                },
+                0.3
+              ],
+              [
+                "SEÑALA",
+                0.3
+              ]
+            ],
+            "at": 1.5,
+            "count": 3
+          }
+        ],
+        "9x16": {
+          "x": 120
+        }
+      },
+      "props": [
+        {
+          "tipo": "flecha",
+          "pos": [
+            -380,
+            -220
+          ],
+          "size": 200,
+          "flip": true,
+          "at": 1.3,
+          "loop": "late",
+          "9x16": {
+            "pos": [
+              -180,
+              -260
+            ],
+            "size": 150
+          }
+        }
+      ],
+      "vo": "Si tarda en subir videos, ya saben a quién reclamarle."
+    },
+    {
+      "id": "19",
+      "kind": "cierre",
+      "min": 3.6,
+      "short": true,
+      "kia": {
+        "pose": "SENTADA",
+        "x": -120,
+        "moves": [
+          {
+            "to": "APRIETA",
+            "at": 0.7,
+            "dur": 0.2
+          },
+          {
+            "to": "LADRA_FRENTE",
+            "at": 1.5,
+            "dur": 0.15
+          },
+          {
+            "to": "CONTENTA",
+            "at": 1.9,
+            "dur": 0.2
+          }
+        ],
+        "9x16": {
+          "x": -150,
+          "sc": 0.95
+        }
+      },
+      "props": [
+        {
+          "tipo": "suscribite",
+          "pos": [
+            150,
+            -60
+          ],
+          "size": 420,
+          "at": 0.3,
+          "mov": [
+            {
+              "at": 0.8,
+              "sc": 0.9,
+              "dur": 0.1
+            },
+            {
+              "at": 0.92,
+              "sc": 1,
+              "dur": 0.3,
+              "ease": "back.out(3)"
+            }
+          ],
+          "9x16": {
+            "pos": [
+              130,
+              -90
+            ],
+            "size": 330
+          }
+        },
+        {
+          "tipo": "campana",
+          "pos": [
+            420,
+            -60
+          ],
+          "size": 110,
+          "at": 0.95,
+          "loop": "sacude",
+          "9x16": {
+            "pos": [
+              130,
+              -260
+            ]
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "id": "campanita",
+          "at": 1
+        },
+        {
+          "id": "ladrido",
+          "at": 1.5
+        }
+      ],
+      "vo": "¡Suscribite, que ladrar es gratis!"
+    }
+  ],
+  "miniatura": {
+    "escena": "hook",
+    "titulo": {
+      "texto": "¡HOLA!",
+      "bajada": "Soy Kia, la humana de cuatro patitas",
+      "linea": ""
+    },
+    "kia": {
+      "pose": "SALUDO",
+      "16x9": {
+        "x": -400,
+        "sc": 1.35
+      },
+      "9x16": {
+        "x": 0,
+        "sc": 1.05
+      }
+    },
+    "9x16": {
+      "titulo": {
+        "texto": "KIA",
+        "bajada": "La humana de cuatro patitas",
+        "linea": "Videos reales y animados · Dormir es mi deporte"
+      }
+    }
+  },
+  "youtube": {
+    "16x9": {
+      "titulo": "¡Hola! Soy Kia 🐶 la bulldog francés que se cree humana (y rottweiler)",
+      "descripcion": "🐶 ¡Hola! Soy Kia, una humana de cuatro patitas. Mi hermano dice que soy bulldog francés, pero yo no lo entiendo.\n\nEn este video te cuento mis hobbies en orden de importancia. Spoiler: hay uno que se repite bastante 😴\nTambién te confieso un secreto: en el fondo soy rottweiler. O pitbull.\n\nMis hobbies, en orden de importancia:\n🐾 Dormir.\n🐾 Acompañar a mi hermano al colegio todas las mañanas y después sacar a pasear a su papá, que necesita caminar.\n🐾 Dormir.\n🐾 Salir disparada como una flecha cuando escucho a alguien en el pasillo, ladrando como si me lo fuera a comer.\n🐾 Dormir.\n🐾 Comerme todo lo que a mamá se le cae cuando cocina.\n🐾 Dormir.\n🐾 Perseguir a cualquier humano de la casa hasta que me tire la pelota.\n🐾 Ah… creo que me olvidé de poner dormir.\n\n🥕 Ojo: no todo lo que comen los humanos es sano para los perros. Si dudás, preguntale a tu veterinario.\n\n{{CIERRE}}\n\n#Kia #BulldogFrances #Frenchie #PresentacionDelCanal #Perros",
+      "tags": [
+        "kia",
+        "bulldog francés",
+        "french bulldog",
+        "frenchie",
+        "perro gracioso",
+        "perros graciosos",
+        "mascotas",
+        "perra que se cree humana",
+        "videos de perros",
+        "animación de perro",
+        "bulldog francés dormilón",
+        "presentación del canal"
+      ]
+    },
+    "9x16": {
+      "titulo": "Soy Kia y mi hobby favorito es… 😴 #Shorts",
+      "descripcion": "🐶 Soy Kia, una humana de cuatro patitas (mi hermano dice que soy bulldog francés, pero no le creo).\n\nMis hobbies, en orden de importancia. Adiviná cuál se repite 😴\nY sí: en el fondo soy rottweiler.\n\n🐾 Dormir. 🐾 Salir disparada al pasillo. 🐾 Dormir. 🐾 Comerme lo que se le cae a mamá. 🐾 La pelota. 🐾 ¿Y dormir?\n\n🥕 Ojo: no todo lo que comen los humanos es sano para los perros. Si dudás, preguntale a tu veterinario.\n\n{{CIERRE}}\n\n#Kia #BulldogFrances #Frenchie #Shorts #Perros",
+      "tags": [
+        "kia",
+        "bulldog francés",
+        "french bulldog",
+        "frenchie",
+        "perro gracioso",
+        "perros graciosos",
+        "mascotas",
+        "perra que se cree humana",
+        "videos de perros",
+        "animación de perro",
+        "shorts de perros",
+        "bulldog francés dormilón"
+      ]
+    }
+  }
+}

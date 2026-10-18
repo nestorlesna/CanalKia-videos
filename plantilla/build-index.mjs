@@ -186,7 +186,7 @@ function scene(f, ctx) {
     const pos = p.pos || [0, -200];
     const pid = uid("p"), mid = `${pid}m`;
     const origin = ic.base ? "50% 100%" : "50% 50%";
-    const hidden = p.at != null && p.entra !== "nada";
+    const hidden = (p.at != null || p.cue != null) && p.entra !== "nada";
     const tr = `translate(${pos[0]},${pos[1]})${p.rot ? ` rotate(${p.rot})` : ""}${p.flip ? " scale(-1,1)" : ""}${p.op != null ? "" : ""}`;
     const g = `<g transform="${tr}"${p.op != null ? ` opacity="${p.op}"` : ""}><g id="${mid}"><g id="${pid}"${hidden ? ' class="a-in"' : ""}>${ic.svg}</g></g></g>`;
     (p.z || def.z) === "atras" ? back.push(g) : front.push(g);
